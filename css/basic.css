@@ -1,0 +1,40 @@
+@charset 'utf-8';
+/* 此文档用于处理所有页面的公共部分，包括导航，尾部，以及一些公用样式 */
+/* All tag */
+body,
+h1,
+ul,
+h2,
+p,
+figure,
+h3,
+ol {margin: 0;padding: 0;}
+body {font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei UI', 'Microsoft YaHei', SimHei, '\5B8B\4F53', simsun, sans-serif;}
+ul,
+ol {list-style: outside none none;}
+a {text-decoration: none;}
+.none {display: none;}
+
+/* 清楚浮动 */
+
+.clearfix:after {clear: both;content: '', display: block;}
+.clearfix {zoom: 1;}
+
+/* 头部 */
+#header {position: relative;z-index: 9999;width: 100%;min-width: 1263px;/*只要有100%的地方都设置最小长度*/height: 70px;background-color: #333;box-shadow: 0 1px 10px rgba(0, 0, 0, .5);}
+#header .center {width: 1263px;height: 70px;/*background-color: red;*/margin: 0 auto;}
+#header .logo {float: left;width: 240px;height: 70px;text-indent: -9999px;/*H1标题是很重要的，但是又不能显示在屏幕上，只能缩进到看不见的位置*/background-image: url(../img/logo.png);}
+#header .link {line-height: 70px;float: right;width: 700px;/*120*5=600px,为了使得整个区块向左，多加50px，就会默认向左移动一点；*//*background-color: red;*/height: 70px;color: #eee;}
+#header .link li {float: left;width: 120px;text-align: center;}
+#header a {/*background-color: red;*/display: block;color: #eee;}
+#header a:hover {background-color: #000;}
+#header .active {background-color: #000;}
+
+/* 尾部 */
+#footer {position: relative;/*清理浮动完以后，是不能用margin来设置外边框的，只能用相对定位。*/top: 20px;clear: both;height: 360px;background-color: #222;}
+#footer .top {width: 1263px;height: 280px;margin: 0 auto;/*background-color: red;*/text-align: center;/*vertical-align: top;*/}
+#footer .bottom {line-height: 80px;height: 80px;text-align: center;color: #777;border-top: 1px solid #444;}
+#footer .block {/*background-color: red;*/display: inline-block;width: 410px;height: 280px;text-align: left;vertical-align: top;}
+#footer h2 {font-size: 24px;font-weight: normal;padding: 20px 0 0 20px;color: #ccc;}
+#footer hr {width: 90%;border: 1px dashed #333;}
+#footer ul {font-size: 18px;line-height: 1.8;text-indent: 20px;color: #777;}

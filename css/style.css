@@ -1,0 +1,21 @@
+@charset 'utf-8';
+/* 此文档用于处理首页的内容部分 */
+/* 首页搜索框 */
+#search {position: relative;width: 100%;min-width: 1263px;/*只要有100%的地方都设置最小长度*/height: 600px;background: url(../img/search.jpg) no-repeat center;}
+#search .center {position: absolute;top: 50%;left: 50%;width: 600px;height: 60px;margin: -30px 0 0 -300px;opacity: .6;border-radius: 10px;background-color: #000;}
+#search .search {font-size: 24px;position: absolute;top: 50%;left: 50%;width: 446px;height: 54px;margin: -28px 0 0 -296px;padding: 0 10px;color: #666;border: 1px solid #666;border-radius: 10px;outline: none;/*输入文字的时候不会出现边框*/}
+#search .button {font-size: 22px;font-weight: bold;position: absolute;top: 50%;left: 50%;width: 120px;height: 54px;margin: -27px 0 0 175px;color: #666;border: none;border-radius: 10px;outline: none;background-color: #eee;}
+#tour {width: 1263px;height: 1180px;margin: 30px auto;/*background-color: silver;*/text-align: center;}
+#tour .center h2 {font-size: 45px;margin: 10px 0;letter-spacing: 2px;color: #666;}
+#tour .center p {font-size: 20px;margin: 10px 0;color: #666;}
+#tour figure {position: relative;display: inline-block;width: 380px;margin: 15px 12px;padding: 4px;text-align: left;border: 1px solid #ddd;border-radius: 4px;}
+
+/* 热门旅游 */
+#tour figure img {vertical-align: middle;}/*这就话可以使得img在figure的中间区域显示*/
+#tour figure figcaption {font-size: 14px;line-height: 1.5;margin: 10px 0;letter-spacing: 1px;color: #777;/*padding: 7px 0 5px 0;*/}
+#tour .title {font-weight: normal;color: #333;}
+#tour .info {padding: 5px 0 0 0;}
+#tour .sat {font-style: normal;position: relative;top: 5px;right: 5px;float: right;}
+#tour .price {font-size: 14px;color: #f60;}
+#tour .price strong {font-size: 20px;letter-spacing: 1px;}
+#tour .type {font-size: 14px;line-height: 25px;position: absolute;top: 4px;left: 4px;width: 90px;height: 25px;text-align: center;letter-spacing: 1px;color: #fff;border-bottom-right-radius: 4px;background-color: #59b200;}
